@@ -8,9 +8,7 @@ public class dispModel {
 	public String tp_destination;
 	public String tp_nod;
 	public String tp_price;
-	public String ti_fname;
-	public String ti_mname;
-	public String ti_lname;
+	public String ti_name;
 	public String ti_gender;
 	public String ti_bday;
 	public String ti_email;

@@ -140,7 +140,7 @@
 									<div class="caption">
 										<i class="livicon" data-name="camera-alt" data-size="16"
 											data-loop="true" data-c="#fff" data-hc="white"></i>
-										Paid Transactions
+										Travel Tours Booked
 									</div>
 
 								</div>
@@ -152,12 +152,13 @@
 									<thead>
 										<tr>
 
-											<th>DV No.</th>
-											<th>Purpose Name</th>
+											<th>Tour Package</th>
+											<th>Destination</th>
+											<th>Place Included</th>
+											<th>Customer Name</th>
+											<th>Contact No</th>
+											<th>No of Person</th>
 											<th>Mode of Payment</th>
-											<th>Institute Name</th>
-											<th>Responsibility Center</th>
-											<th>Amount</th>
 											<th>Officer Assigned</th>
 											<th>Status</th>
 										</tr>
