@@ -16,5 +16,12 @@ public class accordionController {
 		return mav;
 	}
 	
+	public ModelAndView insert_all()
+
+	{	
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("redirect:accordion");
+		return null;
+	}
 
 }
