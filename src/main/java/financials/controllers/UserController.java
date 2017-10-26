@@ -1,4 +1,4 @@
-package financials.controllers;
+/*package financials.controllers;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import financials.dao.DatDao;
+
 import financials.dao.UserDao;
 import financials.model.UserModel;
 
@@ -23,8 +23,6 @@ public class UserController {
 	@Autowired
 	private UserDao UserDao;
 
-	@Autowired
-	private DatDao dao;
 
 	@RequestMapping("/home")
 	public ModelAndView home(@ModelAttribute("modelBindUser") UserModel user) {
@@ -187,3 +185,4 @@ public class UserController {
 	}
 
 }
+*/
