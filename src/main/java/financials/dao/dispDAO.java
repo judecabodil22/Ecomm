@@ -28,7 +28,8 @@ public class dispDAO {
 	
 	public List<dispModel> getList() {
 
-		sql = "Select * from booktravel";
+		sql = "Select bt_id, p_place, tp_name, tp_destination, tp_nod, tp_price, ti_fname +' '+ti_mname+' '+ti_lname,"
+				+ "ti_gender, ti_bday, ti_email, ti_contactno, ti_address, bt_nop, bt_mop from booktravel";
 
 		return jdbcTemplate.query(sql, new RowMapper<dispModel>() {
 			public dispModel mapRow(ResultSet rs, int row) throws SQLException {
@@ -39,9 +40,7 @@ public class dispDAO {
 				dm.setTp_destination(rs.getString("tp_destination"));
 				dm.setTp_nod(rs.getString("tp_nod"));
 				dm.setTp_price(rs.getString("tp_price"));
-				dm.setTi_fname(rs.getString("ti_fname"));
-				dm.setTi_mname(rs.getString("ti_mname"));
-				dm.setTi_lname(rs.getString("ti_lname"));
+				dm.setTi_fname(rs.getString("ti_name"));
 				dm.setTi_gender(rs.getString("ti_gender"));
 				dm.setTi_bday(rs.getString("ti_bday"));
 				dm.setTi_email(rs.getString("ti_email"));
