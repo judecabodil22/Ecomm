@@ -11,6 +11,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
 
+import financials.model.UserModel;
 import financials.model.dispModel;
 
 public class dispDAO {
@@ -40,7 +41,7 @@ public class dispDAO {
 				dm.setTp_destination(rs.getString("tp_destination"));
 				dm.setTp_nod(rs.getString("tp_nod"));
 				dm.setTp_price(rs.getString("tp_price"));
-				dm.setTi_fname(rs.getString("ti_name"));
+				dm.setTi_name(rs.getString("ti_name"));
 				dm.setTi_gender(rs.getString("ti_gender"));
 				dm.setTi_bday(rs.getString("ti_bday"));
 				dm.setTi_email(rs.getString("ti_email"));
@@ -52,5 +53,18 @@ public class dispDAO {
 			}
 		});
 	}
+	
+	public boolean insert(dispModel user) {
+/*
+		String sql = "Insert into Users(user_id,user_name,pass_word)" + "VALUES(?,?,?)";
+
+		jdbcTemplate.update(sql, new Object[] { user.getUser_id(), user.getUser_name(), user.getPass_word() });
+*/
+		return true;
+
+		
+
+	}
+	
 	
 }

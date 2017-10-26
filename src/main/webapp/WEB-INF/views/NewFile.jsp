@@ -886,10 +886,11 @@
                                     <i class="glyphicon glyphicon-chevron-up"></i>
                                 </span>
                             </div>
+                           
                             <div class="panel-body">
                                 <!--main content-->
                                 <div class="row">
-
+								
                                     <div id="wizard">
                                         <h2>Book Travel Tour</h2>
                                         <section>
@@ -897,11 +898,11 @@
                                                 <div class="form-group">
                                                     <label for="userName">Select Tour Package</label>
                                                     <select class="form-control">
-														<option>1</option>
-														<option>2</option>
-														<option>3</option>
-														<option>4</option>
-														<option>5</option>
+														<option>Anawangin Tour Package</option>
+														<option>Bolinao & Hundred Islands Tour Package</option>
+														<option>Baguio Tour Package</option>
+														<option>Boracay Travel Tour Package </option>
+														<option>Potipot Tour Package</option>
 													</select>
 													</div>
                                                 <div class="form-group">

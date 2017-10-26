@@ -1,5 +1,7 @@
 package financials.model;
 
+import java.sql.Date;
+
 public class dispModel {
 
 	public int bt_id;
@@ -10,7 +12,7 @@ public class dispModel {
 	public String tp_price;
 	public String ti_name;
 	public String ti_gender;
-	public String ti_bday;
+	public Date ti_bday;
 	public String ti_email;
 	public String ti_contactno;
 	public String ti_address;
@@ -53,23 +55,11 @@ public class dispModel {
 	public void setTp_price(String tp_price) {
 		this.tp_price = tp_price;
 	}
-	public String getTi_fname() {
-		return ti_fname;
+	public String getTi_name() {
+		return ti_name;
 	}
-	public void setTi_fname(String ti_fname) {
-		this.ti_fname = ti_fname;
-	}
-	public String getTi_mname() {
-		return ti_mname;
-	}
-	public void setTi_mname(String ti_mname) {
-		this.ti_mname = ti_mname;
-	}
-	public String getTi_lname() {
-		return ti_lname;
-	}
-	public void setTi_lname(String ti_lname) {
-		this.ti_lname = ti_lname;
+	public void setTi_name(String ti_name) {
+		this.ti_name = ti_name;
 	}
 	public String getTi_gender() {
 		return ti_gender;
@@ -77,10 +67,10 @@ public class dispModel {
 	public void setTi_gender(String ti_gender) {
 		this.ti_gender = ti_gender;
 	}
-	public String getTi_bday() {
+	public Date getTi_bday() {
 		return ti_bday;
 	}
-	public void setTi_bday(String ti_bday) {
+	public void setTi_bday(Date ti_bday) {
 		this.ti_bday = ti_bday;
 	}
 	public String getTi_email() {
@@ -113,5 +103,7 @@ public class dispModel {
 	public void setBt_mop(String bt_mop) {
 		this.bt_mop = bt_mop;
 	}
+	
+	
 	
 }
