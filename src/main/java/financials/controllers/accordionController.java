@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class accordionController {
+	
 	@RequestMapping("accordion")
 	public ModelAndView smallBump()
 	{
@@ -14,5 +15,6 @@ public class accordionController {
 		
 		return mav;
 	}
+	
 
 }
