@@ -17,7 +17,7 @@
             lineColor: '#fff'
         });            
     
- Calendar 
+/* Calendar */
 
        function ini_events(ele) {
             ele.each(function() {
@@ -42,8 +42,8 @@
         }
         ini_events($('#external-events div.external-event'));
 
-         initialize the calendar
-                 -----------------------------------------------------------------
+        /* initialize the calendar
+                 -----------------------------------------------------------------*/
         //Date for the calendar events (dummy data)
          var date = new Date();
         var d = date.getDate(),
@@ -129,7 +129,7 @@
             }
         });
 
-         ADDING EVENTS 
+        /* ADDING EVENTS */
         var currColor = "#418BCA"; //default
         //Color chooser button
         var colorChooser = $("#color-chooser-btn");
@@ -169,7 +169,7 @@
             //Remove event from text input
             $("#new-event").val("");
         });
- realtime chart 
+/* realtime chart */
 var data = [], totalPoints = 300;
     function getRandomData() {
         if (data.length > 0)
@@ -232,14 +232,12 @@ var data = [], totalPoints = 300;
         update();
     }
     // top menu 
-     var options = {
-			useEasing: true, 
-			useGrouping: true, 
-			separator: ',', 
-			decimal: '.', 
-			};
-    
-    
+    var options = {  
+        useEasing: false,
+          useGrouping: false,
+          separator: ',',
+          decimal: '.'
+    }
     var demo = new countUp("myTargetElement1", 12.52, 9500, 0, 6, options);
     demo.start();
     var demo = new countUp("myTargetElement2", 1, 100, 0, 6, options);
@@ -286,7 +284,7 @@ var data = [], totalPoints = 300;
           $(document).ready(function()
     {
         
-         *//** BEGIN WIDGET PIE FUNCTION **//*
+         /** BEGIN WIDGET PIE FUNCTION **/
         if ($('.widget-easy-pie-1').length > 0)
             {
                 $('.widget-easy-pie-1').easyPieChart({
@@ -322,7 +320,7 @@ var data = [], totalPoints = 300;
                     }
                 });
             }
-        *//** END WIDGET PIE FUNCTION **//*
+        /** END WIDGET PIE FUNCTION **/
     
     
     });
@@ -360,3 +358,4 @@ $(function(){
     ]
   });
 });
+   

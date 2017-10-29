@@ -1,17 +1,85 @@
-$(document).ready(function() {    
-    //Events that reset and restart the timer animation when the slides change
-    $("#transition-timer-carousel").on("slide.bs.carousel", function(event) {
-        //The animate class gets removed so that it jumps straight back to 0%
-        $(".transition-timer-carousel-progress-bar", this)
-            .removeClass("animate").css("width", "0%");
-    }).on("slid.bs.carousel", function(event) {
-        //The slide transition finished, so re-add the animate class so that
-        //the timer bar takes time to fill up
-        $(".transition-timer-carousel-progress-bar", this)
-            .addClass("animate").css("width", "100%");
+$(document).ready(function() {
+
+    var time = 7; // time in seconds
+
+    var $progressBar,
+        $bar,
+        $elem,
+        isPause,
+        tick,
+        percentTime;
+
+    //Init the carousel
+    $("#owl-demo").owlCarousel({
+        slideSpeed : 500,
+        paginationSpeed : 500,
+        singleItem : true,
+        afterInit : progressBar,
+        afterMove : moved,
+        startDragging : pauseOnDragging
     });
-    
-    //Kick off the initial slide animation when the document is ready
-    $(".transition-timer-carousel-progress-bar", "#transition-timer-carousel")
-        .css("width", "100%");
+
+    //Init progressBar where elem is $("#owl-demo")
+    function progressBar(elem){
+        $elem = elem;
+        //build progress bar elements
+        buildProgressBar();
+        //start counting
+        start();
+    }
+
+    //create div#progressBar and div#bar then prepend to $("#owl-demo")
+    function buildProgressBar(){
+        $progressBar = $("<div>",{
+            id:"progressBar"
+        });
+        $bar = $("<div>",{
+            id:"bar"
+        });
+        $progressBar.append($bar).prependTo($elem);
+    }
+
+    function start() {
+        //reset timer
+        percentTime = 0;
+        isPause = false;
+        //run interval every 0.01 second
+        tick = setInterval(interval, 10);
+    };
+
+    function interval() {
+        if(isPause === false){
+            percentTime += 1 / time;
+            $bar.css({
+                width: percentTime+"%"
+            });
+            //if percentTime is equal or greater than 100
+            if(percentTime >= 100){
+                //slide to next item
+                $elem.trigger('owl.next')
+            }
+        }
+    }
+
+    //pause while dragging
+    function pauseOnDragging(){
+        isPause = true;
+    }
+
+    //moved callback
+    function moved(){
+        //clear interval
+        clearTimeout(tick);
+        //start again
+        start();
+    }
+
+    //uncomment this to make pause on mouseover
+    // $elem.on('mouseover',function(){
+    //   isPause = true;
+    // })
+    // $elem.on('mouseout',function(){
+    //   isPause = false;
+    // })
+
 });

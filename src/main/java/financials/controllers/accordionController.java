@@ -13,7 +13,7 @@ public class accordionController {
 	@Autowired
 	dispDAO dd;
 	
-	@RequestMapping("accordion")
+	@RequestMapping("ss_accordion")
 	public ModelAndView smallBump()
 	{
 		ModelAndView mav = new ModelAndView();
@@ -26,7 +26,7 @@ public class accordionController {
 
 	{	
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("redirect:accordion");
+		mav.setViewName("redirect:ss_accordion");
 		return null;
 	}
 

@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 body {
-    background: url(../../img/parallax/back.png);
+    background: url(../../img/next.png);
     background-color: #444;
-    background: url(../../img/parallax/pinlayer2.png), url(../../img/parallax/pinlayer1.png), url(../../img/parallax/back.png);
+    --background: url(../../img/parallax/pinlayer2.png), url(../../img/parallax/pinlayer1.png), url(../../img/parallax/back.png);
     font-family: 'lato';
 }
 
