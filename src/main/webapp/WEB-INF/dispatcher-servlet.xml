@@ -46,9 +46,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
         <constructor-arg ref="dataSource"></constructor-arg>
     </bean>
     
-     <bean id="dispDAO" class="financials.dao.dispDAO">
-        <constructor-arg ref="dataSource"></constructor-arg>
-    </bean>
+   
     
      
 

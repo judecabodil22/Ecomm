@@ -59,8 +59,7 @@
                     <span><a href="resources/#"> <i class="livicon" data-name="responsive-menu" data-size="25" data-loop="true" data-c="#757b87" data-hc="#ccc"></i>
                     </a></span>
                 </button>
-                <a class="navbar-brand" href="resources/#"><img src="resources/images/logo.png" >
-                </a>
+               
             </div>
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">

@@ -7,7 +7,7 @@
     <link href="resources/vendors/wizard/jquery-steps/css/wizard.css" rel="stylesheet" >
     <link href="resources/vendors/wizard/jquery-steps/css/jquery.steps.css" rel="stylesheet" >
     <!-- end of page level css -->
-	<%@ include file = "header.jsp" %>
+	<%@ include file = "common/header.jsp" %>
 
 
     <section class="content" style="margin-top:2em">
@@ -145,6 +145,6 @@
     </div>
     <!-- //Container Section End -->
     <!-- Footer Section Start -->
-    <%@ include file = "footer.jsp" %>
+    <%@ include file = "common/footer.jsp" %>
     
 </html>
