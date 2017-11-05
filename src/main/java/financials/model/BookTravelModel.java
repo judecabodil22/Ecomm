@@ -2,12 +2,12 @@ package financials.model;
 
 public class BookTravelModel {
 	
-	private int bt_id;
-	private int p_id;
-	private int tp_id;
-	private int ti_id;
-	private int bt_nop;
-	private String bt_mop;
+	private int bt_id; /*Book Travel Id*/
+	private int p_id;  /*Place Id*/
+	private int tp_id; /*Tour Package Id*/
+	private int ti_id; /*Traveler Info Id*/
+	private int bt_nop; /*No. of Person*/
+	private String bt_mop; /*Mode of Payment*/
 	
 	public int getBt_id() {
 		return bt_id;

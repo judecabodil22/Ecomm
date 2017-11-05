@@ -2,9 +2,9 @@ package financials.model;
 
 public class PlaceModel {
 	
-	private int p_id;
-	private String p_place;
-	private String p_city;
+	private int p_id; /*Place Id*/
+	private String p_place; /*Place Name?*/
+	private String p_city;	/*Place City? WTF*/
 	
 	public int getP_id() {
 		return p_id;

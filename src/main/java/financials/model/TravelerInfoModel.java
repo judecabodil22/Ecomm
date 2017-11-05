@@ -4,15 +4,15 @@ import java.sql.Date;
 
 public class TravelerInfoModel {
 	
-	private int ti_id;
-	private String ti_fname;
-	private String ti_mname;
-	private String ti_lname;
-	private String ti_gender;
-	private Date ti_bday;
-	private String ti_email;
-	private int ti_contactno;
-	private String ti_address;
+	private int ti_id; /*Traveler Info Id*/
+	private String ti_fname; /*First Name*/
+	private String ti_mname; /*Middle Name*/
+	private String ti_lname; /*Last Name*/
+	private String ti_gender; /*Gender*/
+	private Date ti_bday; /*Birthday*/
+	private String ti_email; /*Email*/
+	private int ti_contactno; /*Contact Number*/
+	private String ti_address; /*Address*/
 	
 	public int getTi_id() {
 		return ti_id;

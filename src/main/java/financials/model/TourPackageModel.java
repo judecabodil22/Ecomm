@@ -2,13 +2,13 @@ package financials.model;
 
 public class TourPackageModel {
 	
-	private int tp_id;
-	private int p_id;
-	private String tp_name;
-	private String tp_destination;
-	private String tp_nod;
-	private String tp_price;
-	private String tp_desc;
+	private int tp_id; /*Tour Package ID*/
+	private int p_id;  /*Place Id*/
+	private String tp_name; /*Tour Package Name*/
+	private String tp_destination; /*Tour Package Destination*/
+	private String tp_nod; /*Number of Days*/
+	private String tp_price; /*Price*/
+	private String tp_desc; /*Description*/
 	
 	public int getTp_id() {
 		return tp_id;
