@@ -1,4 +1,4 @@
-/*package financials.controllers;
+package financials.controllers;
 
 import java.util.List;
 
@@ -16,23 +16,20 @@ public class dispController {
 
 	@Autowired
 	dispDAO dd;
-
-	@RequestMapping("ecomm_display_table")
+	
+	@RequestMapping("ecomm_display")
 	public ModelAndView mav(@ModelAttribute("insert") dispModel dm) {
-		List<dispModel> gList = getList();
+		List<dispModel> tourList = listTour();
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("dis", "Disbursement");
-		mav.setViewName("Disbursement/displayTable");
-		mav.addObject("gList", gList);
+		mav.setViewName("/displayTable");
+		mav.addObject("tourList", tourList);
+		
 		return mav;
-
-	}
-
-	public List<dispModel> getList() {
-		return dd.getList();
-
 	}
 	
+	public List<dispModel> listTour() {
+		return dd.getTour();
+	}
 	
 }
-*/
