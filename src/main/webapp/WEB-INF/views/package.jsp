@@ -92,6 +92,9 @@
         <!--Content Section Start -->
         <!-- Best Deal Section Start -->
         <div class="row">
+        
+           <form:form action="ecomm_viewPackage" modelAttribute="getData">
+        
             <h3>BEST DEALS</h3>
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail text-center">
@@ -108,8 +111,10 @@
                         <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#787878" data-hc="787878"></i>Environmental fee</li>
 
                     </ul>
+               
+                
                    <h4 class="text-primary">Php. 10,000.00 </h4>
-                    <a href="ecomm_viewPackage" class="btn btn-primary btn-block text-white">View</a>
+                   <input type="submit" value="View" name="Tour1" class="btn btn-primary btn-block text-white">
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -127,7 +132,7 @@
                         <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#787878" data-hc="787878"></i>Environmental fee</li>
                     </ul>
                    <h4 class="text-primary">Php. 10,000.00 </h4>
-                    <a href="ecomm_viewPackage" class="btn btn-primary btn-block text-white">View</a>
+                         <input type="submit" value="View" name="Tour2" class="btn btn-primary btn-block text-white">
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -144,14 +149,14 @@
                         <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#787878" data-hc="787878"></i> island hopping A</li>
                     </ul>
                    <h4 class="text-primary">Php. 10,000.00 </h4>
-                    <a href="ecomm_viewPackage" class="btn btn-primary btn-block text-white">View</a>
+                  <input type="submit" value="View" name="Tour3" class="btn btn-primary btn-block text-white">
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class=" thumbnail text-center">
                     <a href="ecomm_viewPackage"><img src="resources/images/ecom/iloilo.jpg" class="img-responsive" alt="nokia image"></a>
                     <br/>
-                    <h5 class="text-primary">Ilocos Tour Package</h5>
+                    <h5 class="text-primary">Iloilo Tour Package</h5>
                     <ul>
                         <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#787878" data-hc="787878"></i> airconditioned van transfer from hotel</li>
                         <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#787878" data-hc="787878"></i> Underground River Tour</li>
@@ -161,7 +166,8 @@
                         <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#787878" data-hc="787878"></i> island hopping A</li>
                     </ul>
                    <h4 class="text-primary">Php. 10,000.00 </h4>
-                    <a href="ecomm_viewPackage" class="btn btn-primary btn-block text-white">View</a>
+ 				<input type="submit" value="View" name="Tour4" class="btn btn-primary btn-block text-white">
+                  
                 </div>
             </div>
             <nav>
@@ -173,6 +179,9 @@
                     <li><a href="resources/#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
                 </ul>
             </nav>
+            
+            </form:form>
+            
         </div>
         <!-- //Content Section End -->
     </div>

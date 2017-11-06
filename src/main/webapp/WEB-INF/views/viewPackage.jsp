@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 
 <head>
@@ -87,7 +88,7 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li>
-                    <a href="resources/index.html"> <i class="livicon icon3 icon4" data-name="home" data-size="18" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i>Packages
+                    <a href="ecomm_package"> <i class="livicon icon3 icon4" data-name="home" data-size="18" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i>Packages
                     </a>
                 </li>
                 <li class="hidden-xs">
@@ -144,6 +145,9 @@
         <!--item view end-->
         <!--item desciption start-->
         <div class="row">
+        
+        <form:form action="insert" modelAttribute="ecomm_getData">
+        
             <div class="col-sm-12">
                 <!-- Tabbable-Panel Start -->
                 <div class="tabbable-panel">
@@ -202,7 +206,29 @@
                                                             <div class="input-group-addon">
                                                                 <i class="fa fa-calendar"></i>
                                                             </div>
-                                                            <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                                            <!-- <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/> -->
+                                                             <input type="date" class="form-control"/>
+                                                             
+                                                          <c:choose>
+                                                          
+                                                          <c:when test="${tourValue == 1}">
+                                                          <form:input type="hidden" value="${tourValue}" path="tp_id"/>
+                                                          </c:when>
+                                                          
+                                                           <c:when test="${tourValue == 2}">
+                                                          <form:input type="hidden" value="${tourValue}" path="tp_id"/>
+                                                          </c:when>
+                                                          
+                                                           <c:when test="${tourValue == 3}">
+                                                          <form:input type="hidden" value="${tourValue}" path="tp_id"/>
+                                                          </c:when>
+                                                          
+                                                          <c:when test="${tourValue == 4}">
+                                                          <form:input type="hidden" value="${tourValue}" path="tp_id"/>
+                                                          </c:when>
+                                                          
+                                                          
+                                                          </c:choose>
                                                         </div>
                                                
                                             </div>
@@ -289,6 +315,7 @@
                     <!-- Tabbable_panel End -->
                 </div>
             </div>
+            </form:form>
         </div>
         <!--item desciption end-->
     </div>
