@@ -146,7 +146,7 @@
         <!--item desciption start-->
         <div class="row">
         
-        <form:form action="insert" modelAttribute="ecomm_getData">
+        <form:form action="ecomm_insertTI" modelAttribute="fundingHappiness">
         
             <div class="col-sm-12">
                 <!-- Tabbable-Panel Start -->
@@ -192,13 +192,14 @@
                                      
                                                 <div class="form-group">
                                                     <label for="userName">Number of person(s)</label>
-                                                    <select class="form-control">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
+                                                    <form:select class="form-control" path="bt_nop">
+                                                        <form:option value="0" path="bt_nop">1</form:option>
+                                                        <form:option value="1" path="bt_nop">2</form:option>
+                                                        <form:option value="2" path="bt_nop">3</form:option>
+                                                        <form:option value="3" path="bt_nop">4</form:option>
+                                                        <form:option value="4" path="bt_nop">5</form:option>
+                                                      
+                                                    </form:select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="userName">Date</label>
@@ -241,42 +242,51 @@
                                             <div class="form-group">
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <form class="form-horizontal">
+                                                            <div class="form-horizontal">
                                                                 <h2 class="hidden">&nbsp;</h2>
                                                                 <div class="form-group" style="margin-right:2em">
                                                                     <label for="name">First name *</label>
-                                                                    <input id="name" name="name" placeholder=""type="text" class="form-control required"></div>
+                                                                    
+                                                                    <form:input id="name" name="name" placeholder="" type="text" class="form-control required" path="ti_fname"/></div>
+                                                                    
                                                                 <div class="form-group" style="margin-right:2em">
                                                                     <label for="name">Middle name *</label>
-                                                                    <input id="name" name="name" placeholder=""type="text" class="form-control required"></div>
+                                                                    
+                                                                    <form:input id="name" name="name" placeholder="" type="text" class="form-control required" path="ti_mname"/></div>
+                                                                    
                                                                 <div class="form-group" style="margin-right:2em">
                                                                     <label for="surname">Last name *</label>
-                                                                    <input id="surname" name="surname" type="text" placeholder="" class="form-control required"></div>
+                                                                    
+                                                                    <form:input id="surname" name="surname" type="text" placeholder="" class="form-control required" path="ti_lname"/></div>
+                                                                    
                                                                 <div class="form-group" style="margin-right:2em">
                                                                     <label for="surname">Birthdate *</label>
-                                                                    <input id="surname" name="surname" type="text" placeholder="" class="form-control required"></div>
-                                                            </form>
+                                                                    
+                                                                    <form:input id="date" name="surname" type="date" placeholder="" class="form-control required" path="ti_bday"/></div>
+                                                                    
+                                                            </div>
                                                         </div>
                                                         <div class="col-md-6" >
-                                                            <form class="form-horizontal">
+                                                            <div class="form-horizontal">
                                                                 <div class="form-group" style="margin-left:1em" >
                                                                     <label for="email">Gender</label>
-                                                                    <select class="form-control" title="Select an account type...">
-                                                                        <option>Select</option>
-                                                                        <option>MALE</option>
-                                                                        <option>FEMALE</option>
-                                                                    </select>
+                                                                    <form:select id="" name="" class="form-control" path="ti_gender">
+                                                                    
+   																	<form:option value="0" path="ti_bday">Male</form:option>
+   																	<form:option value="1" path="ti_bday">Female</form:option>
+     													
+ 																	</form:select>
                                                                 </div>
                                                                 <div class="form-group" style="margin-left:1em">
                                                                 <label for="email">Email *</label>
-                                                                <input id="email" name="email" placeholder="" type="text" class="form-control required email"></div>
+                                                                <form:input id="email" name="email" placeholder="" type="text" class="form-control required email" path="ti_email"/></div>
                                                             <div class="form-group" style="margin-left:1em">
                                                                 <label for="address">Address</label>
-                                                                <input id="address" name="address" type="text" class="form-control"></div>
+                                                                <form:input id="address" name="address" type="text" class="form-control" path="ti_address"/></div>
                                                             <div class="form-group" style="margin-left:1em">
                                                                 <label for="surname">Contact number *</label>
-                                                                <input id="surname" name="surname" type="text" placeholder="" class="form-control required"></div>
-                                                            </form>
+                                                                <form:input id="number" name="surname" type="text" placeholder="" class="form-control required" path="ti_contactno"/></div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -292,7 +302,7 @@
 
                                                 <h2 class="hidden">&nbsp;</h2>
                                                 <div class="pos-rel p-l-30">
-                                                    <input id="acceptTerms" name="acceptTerms" type="checkbox" class="pos-rel p-l-30 required">
+                                                    <!-- <input id="acceptTerms" name="acceptTerms" type="checkbox" class="pos-rel p-l-30 required"> -->
                                                     <label for="acceptTerms">I agree with the Terms and Conditions.</label>
                                                 </div>
                                                 
