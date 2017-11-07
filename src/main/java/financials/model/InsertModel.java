@@ -31,6 +31,7 @@ public class InsertModel {
 	private String ti_address;
 	private String ti_email;
 	private String ti_contactno;
+	private int count;
 	public String getBt_id() {
 		return bt_id;
 	}
@@ -169,6 +170,12 @@ public class InsertModel {
 	}
 	public void setTi_id(int ti_id) {
 		this.ti_id = ti_id;
+	}
+	public int getCount() {
+		return count;
+	}
+	public int setCount(int count) {
+		return this.count = count;
 	}
 
 }

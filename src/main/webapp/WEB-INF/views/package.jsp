@@ -65,7 +65,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="ecomm_index"> Home</a>
                     </li>
-                    <li ><a href="ecomm_packages"> Packages</a>
+                    <li ><a href="ecomm_package"> Packages</a>
                     </li>
                     <li><a href="resources/aboutus.html">About Us</a>
                     </li>

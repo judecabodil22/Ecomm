@@ -72,7 +72,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="ecomm_index"> Home</a>
                     </li>
-                    <li ><a href="ecomm_packages"> Packages</a>
+                    <li ><a href="ecomm_package"> Packages</a>
                     </li>
                     <li><a href="resources/aboutus.html">About Us</a>
                     </li>
@@ -103,45 +103,28 @@
     <!-- Container Section Start -->
     <div class="container">
         <!--item view start-->
-        <div class="row">
-            <div class="mart10">
-                <!--product view-->
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="product_wrapper">
-                            <img id="zoom_09" src="resources/images/cart/small/1.jpg" data-zoom-image="images/cart/big/1.jpg" class="img-responsive" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--individual products in product view-->
-                        <div id="gal1">
-                            <a href="resources/#" data-image="images/cart/small/1.jpg" data-zoom-image="images/cart/big/1.jpg">
-                                <img id="img_01" src="resources/images/cart/small/1.jpg" class="img-responsive" />
-                            </a>
-                            <a href="resources/#" data-image="images/cart/small/2.jpg" data-zoom-image="images/cart/big/2.jpg">
-                                <img id="img_01" src="resources/images/cart/small/2.jpg" class="img-responsive" />
-                            </a>
-                            <a href="resources/#" data-image="images/cart/small/3.jpg" data-zoom-image="images/cart/big/3.jpg">
-                                <img id="img_01" src="resources/images/cart/small/3.jpg" class="img-responsive" />
-                            </a>
-                            <a href="resources/#" data-image="images/cart/small/4.jpg" data-zoom-image="images/cart/big/4.jpg">
-                                <img id="img_01" src="resources/images/cart/small/4.jpg" class="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--individual product description-->
-                <div class="col-md-8">
-                    <h2 class="text-primary">Puerto Princesa + El Nido Palawan Tour Package </h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
-                    <div class="text-big3">
-                        <del>$1000</del>
-                    </div>
-                   
-                                     
-                </div>
-            </div>
-        </div>
+        
+        	 <c:choose>
+                                                          
+              <c:when test="${tourValue == 2}">
+                <%@ include file = "common/coron.jsp" %>
+              </c:when>
+              
+              <c:when test="${tourValue == 3}">
+                <%@ include file = "common/ilocos.jsp" %>
+              </c:when>
+              
+                <c:when test="${tourValue == 4}">
+                <%@ include file = "common/iloilo.jsp" %>
+              </c:when>
+              
+               <c:when test="${tourValue == 1}">
+                <%@ include file = "common/prinsesa.jsp" %>
+              </c:when>
+              
+       		 </c:choose>
+        
+  
         <!--item view end-->
         <!--item desciption start-->
         <div class="row">
@@ -167,16 +150,29 @@
                         <!-- //Nav Nav-tabs End -->
                         <!-- Tab-content Start -->
                         <div class="tab-content">
-                            <div class="tab-pane active" id="tab_default_1">
-                                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus.</p>
-                                <ul>
-                                    <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#555555" data-hc="#555555"></i> White dwarf extraplanetary</li>
-                                    <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#555555" data-hc="#555555"></i>Worldlets, white dwarf</li>
-                                    <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#555555" data-hc="#555555"></i>Cambrian explosion, hydrogen</li>
-                                    <li><i class="livicon" data-name="check" data-size="18" data-loop="true" data-c="#555555" data-hc="#555555"></i>Euclid Sea of Tranquility</li>
-                                </ul>
-                                <p>Coffin quarter pipe NoMeansNo switch sponsored hospital flip. Fastplant 270 skater boned out yeah. Stoked boardslide hardware air nose-bump. Manual hang ten ledge Vision Streetwear backside hang-up. Streets on Fire wall ride nose grab rail speed wobbles hang ten. Invert hand rail snake skate key hurricane. Hanger concave rail no comply rail slide. Nose bump gnarly 180 soul skate shinner. Jason Dill Japan air hang ten camel back goofy footed frontside air. Melancholy axle set handplant kickflip Donger fakie.</p>
-                            </div>
+                         
+                            <c:choose>
+                                                          
+              					<c:when test="${tourValue == 2}">
+               						 <%@ include file = "common/coronp2.jsp" %>
+             					 </c:when>
+             					 
+             					 <c:when test="${tourValue == 3}">
+               						 <%@ include file = "common/ilocos2.jsp" %>
+             					 </c:when>
+             					 
+             					 <c:when test="${tourValue == 4}">
+               						 <%@ include file = "common/iloilo2.jsp" %>
+             					 </c:when>
+             					 
+             					 <c:when test="${tourValue == 1}">
+               						 <%@ include file = "common/prinsesa2.jsp" %>
+             					 </c:when>
+             					 
+             					 
+              
+       		 				</c:choose>
+       		 				
                             <div class="tab-pane" id="tab_default_2">
                                 <div class="row">
                         <div class="col-md-12">
@@ -208,7 +204,7 @@
                                                                 <i class="fa fa-calendar"></i>
                                                             </div>
                                                             <!-- <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/> -->
-                                                             <input type="date" class="form-control"/>
+                                                             <form:input type="date" class="form-control" path="bt_startdate"/>
                                                              
                                                           <c:choose>
                                                           
@@ -230,6 +226,9 @@
                                                           
                                                           
                                                           </c:choose>
+                                                          
+                                                          
+                                                          
                                                         </div>
                                                
                                             </div>
@@ -302,7 +301,7 @@
 
                                                 <h2 class="hidden">&nbsp;</h2>
                                                 <div class="pos-rel p-l-30">
-                                                    <!-- <input id="acceptTerms" name="acceptTerms" type="checkbox" class="pos-rel p-l-30 required"> -->
+                                                <!--      <input id="acceptTerms" name="acceptTerms" type="checkbox" class="pos-rel p-l-30 required"> -->
                                                     <label for="acceptTerms">I agree with the Terms and Conditions.</label>
                                                 </div>
                                                 

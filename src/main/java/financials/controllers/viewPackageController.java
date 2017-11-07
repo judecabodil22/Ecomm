@@ -61,7 +61,8 @@ public class viewPackageController {
 	@RequestMapping("ecomm_insertTI")
 	public ModelAndView insert(@ModelAttribute("fundingHappiness") InsertModel model)
 	{
-		dao.ecomm_insert(model);
+		dao.ecomm_InsertTI(model);
+		/*dao.ecomm_insertBT(model);*/
 		
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("redirect:ecomm_viewPackage");
