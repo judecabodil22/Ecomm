@@ -33,13 +33,15 @@ public class InsertTInfo {
 	public boolean ecomm_InsertTI(InsertModel model) {
 
 		/*public final int TravelerId = model.getTi_id();*/
-		/*
-		ecomm_get();*/
-			
+		
+		ecomm_get();
+		
 		String sql = "Insert into travelerinfo(tp_id, ti_fname,ti_mname, ti_lname, ti_gender, ti_bday, ti_address, ti_email, ti_contactno) values(?,?,?,?,?,?,?,?,?)";
 		
 		jdbcTemplate.update(sql, new Object[] { model.getTp_id(), model.getTi_fname(), model.getTi_mname(), model.getTi_lname(), model.getTi_gender(), model.getTi_bday(), model.getTi_address(), model.getTi_email(), model.getTi_contactno() });
-
+		
+		
+		
 		return true;
 	}
 
@@ -59,13 +61,14 @@ public class InsertTInfo {
 		});
 	}
 	
-	public boolean ecomm_insertBT(InsertModel model) {
+	public boolean ecomm_insertBT(InsertModel model,int oi) {
 
 		/*public final int TravelerId = model.getTi_id();*/
 		
-		String sql = "Insert into booktravel(tp_id, ti_id, bt_nop, bt_StartDate, bt_mop)";
-		
-		jdbcTemplate.update(sql, new Object[] {model.getBt_tp_id(), i, model.getBt_nop(), model.getBt_startdate(), 1});
+		String sql = "Insert into booktravel(tp_id,ti_id,bt_nop,bt_StartDate,bt_mop,status) values(?,?,?,?,?,?)";
+		String lnd= "Landbank";
+		String stat= "Pending";
+		jdbcTemplate.update(sql, new Object[] {model.getTp_id(),oi,model.getBt_nop(),model.getBt_startdate(),lnd,stat});
 
 		return true;
 	}

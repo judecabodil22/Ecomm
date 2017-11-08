@@ -189,11 +189,11 @@
                                                 <div class="form-group">
                                                     <label for="userName">Number of person(s)</label>
                                                     <form:select class="form-control" path="bt_nop">
-                                                        <form:option value="0" path="bt_nop">1</form:option>
-                                                        <form:option value="1" path="bt_nop">2</form:option>
-                                                        <form:option value="2" path="bt_nop">3</form:option>
-                                                        <form:option value="3" path="bt_nop">4</form:option>
-                                                        <form:option value="4" path="bt_nop">5</form:option>
+                                                        <form:option value="1" path="bt_nop">1</form:option>
+                                                        <form:option value="2" path="bt_nop">2</form:option>
+                                                        <form:option value="3" path="bt_nop">3</form:option>
+                                                        <form:option value="4" path="bt_nop">4</form:option>
+                                                        <form:option value="5" path="bt_nop">5</form:option>
                                                       
                                                     </form:select>
                                                 </div>
