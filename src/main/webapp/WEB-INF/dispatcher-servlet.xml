@@ -50,7 +50,12 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
         <constructor-arg ref="dataSource"></constructor-arg>
     </bean>
     
+    <bean id="CustListDAO" class="financials.dao.CustListDAO">
+        <constructor-arg ref="dataSource"></constructor-arg>
+    </bean>
     
-     
+    <bean id="ApprovedDAO" class="financials.dao.ApprovedDAO">
+        <constructor-arg ref="dataSource"></constructor-arg>
+    </bean> 
 
 </beans>
