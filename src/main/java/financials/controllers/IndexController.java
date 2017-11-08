@@ -8,25 +8,17 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-public class accordionController {
+public class IndexController {
 	
-	
-	
-	@RequestMapping("ecomm_accordion")
+
+	@RequestMapping("ecomm_index")
 	public ModelAndView smallBump()
 	{
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/EcommTransaction");
+		mav.setViewName("/index");
 		
 		return mav;
 	}
 	
-	public ModelAndView insert_all()
-
-	{	
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("redirect:ecomm_accordion");
-		return null;
-	}
-
+	
 }

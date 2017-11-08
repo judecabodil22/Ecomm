@@ -59,7 +59,9 @@
                     <span><a href="resources/#"> <i class="livicon" data-name="responsive-menu" data-size="25" data-loop="true" data-c="#757b87" data-hc="#ccc"></i>
                     </a></span>
                 </button>
-               
+                 <a class="navbar-brand" href="#"><img src="images/eatlogo02.png" class="logo_position">
+                </a>
+
             </div>
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -75,6 +77,7 @@
                             </li>
                         </ul>
                     </li>
+                  	 <li><a href="aboutus.html">About Us</a>
                   
                 </ul>
             </div>

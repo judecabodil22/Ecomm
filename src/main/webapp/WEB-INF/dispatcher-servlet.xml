@@ -50,6 +50,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
         <constructor-arg ref="dataSource"></constructor-arg>
     </bean>
     
+<<<<<<< HEAD
     <bean id="CustListDAO" class="financials.dao.CustListDAO">
         <constructor-arg ref="dataSource"></constructor-arg>
     </bean>
@@ -57,5 +58,11 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
     <bean id="ApprovedDAO" class="financials.dao.ApprovedDAO">
         <constructor-arg ref="dataSource"></constructor-arg>
     </bean> 
+=======
+    	<bean id="InsertTInfo" class="financials.dao.InsertTInfo">
+        <constructor-arg ref="dataSource"></constructor-arg>
+    </bean>
+     
+>>>>>>> 51313aad1e5b4f0a6d039c896c67f4419e7f181e
 
 </beans>
