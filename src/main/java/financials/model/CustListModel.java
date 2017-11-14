@@ -2,23 +2,23 @@ package financials.model;
 
 public class CustListModel {
 
-	private String bt_id;
-	private String bt_tp_id;
-	private String bt_ti_id;
+	private int bt_id;
+	private int bt_tp_id;
+	private int bt_ti_id;
 	private String bt_nop;
 	private String bt_startdate;
 	private String bt_enddate;
 	private String bt_mop;
 	private String status;
 	
-	private String tp_id;
+	private int tp_id;
 	private String tp_code;
 	private String tp_name;
 	private String tp_desc;
 	private String tp_price;
 	
-	private String ti_id;
-	private String ti_tp_id;
+	private int ti_id;
+	private int ti_tp_id;
 	private String ti_name;
 	private String ti_fname;
 	private String ti_lname;
@@ -26,25 +26,9 @@ public class CustListModel {
 	private String ti_bday;
 	private String ti_address;
 	private String ti_email;
-	private String ti_contactno;
-	public String getBt_id() {
-		return bt_id;
-	}
-	public void setBt_id(String bt_id) {
-		this.bt_id = bt_id;
-	}
-	public String getBt_tp_id() {
-		return bt_tp_id;
-	}
-	public void setBt_tp_id(String bt_tp_id) {
-		this.bt_tp_id = bt_tp_id;
-	}
-	public String getBt_ti_id() {
-		return bt_ti_id;
-	}
-	public void setBt_ti_id(String bt_ti_id) {
-		this.bt_ti_id = bt_ti_id;
-	}
+	private int ti_contactno;
+	
+	
 	public String getBt_nop() {
 		return bt_nop;
 	}
@@ -69,12 +53,7 @@ public class CustListModel {
 	public void setBt_mop(String bt_mop) {
 		this.bt_mop = bt_mop;
 	}
-	public String getTp_id() {
-		return tp_id;
-	}
-	public void setTp_id(String tp_id) {
-		this.tp_id = tp_id;
-	}
+	
 	public String getTp_code() {
 		return tp_code;
 	}
@@ -99,18 +78,7 @@ public class CustListModel {
 	public void setTp_price(String tp_price) {
 		this.tp_price = tp_price;
 	}
-	public String getTi_id() {
-		return ti_id;
-	}
-	public void setTi_id(String ti_id) {
-		this.ti_id = ti_id;
-	}
-	public String getTi_tp_id() {
-		return ti_tp_id;
-	}
-	public void setTi_tp_id(String ti_tp_id) {
-		this.ti_tp_id = ti_tp_id;
-	}
+	
 	public String getTi_name() {
 		return ti_name;
 	}
@@ -154,14 +122,51 @@ public class CustListModel {
 	public void setTi_email(String ti_email) {
 		this.ti_email = ti_email;
 	}
-	public String getTi_contactno() {
-		return ti_contactno;
-	}
-	public void setTi_contactno(String ti_contactno) {
-		this.ti_contactno = ti_contactno;
-	}
+	
 	public String getStatus() {
 		return status;
+	}
+	public int getBt_id() {
+		return bt_id;
+	}
+	public void setBt_id(int bt_id) {
+		this.bt_id = bt_id;
+	}
+	public int getBt_tp_id() {
+		return bt_tp_id;
+	}
+	public void setBt_tp_id(int bt_tp_id) {
+		this.bt_tp_id = bt_tp_id;
+	}
+	public int getBt_ti_id() {
+		return bt_ti_id;
+	}
+	public void setBt_ti_id(int bt_ti_id) {
+		this.bt_ti_id = bt_ti_id;
+	}
+	public int getTp_id() {
+		return tp_id;
+	}
+	public void setTp_id(int tp_id) {
+		this.tp_id = tp_id;
+	}
+	public int getTi_id() {
+		return ti_id;
+	}
+	public void setTi_id(int ti_id) {
+		this.ti_id = ti_id;
+	}
+	public int getTi_tp_id() {
+		return ti_tp_id;
+	}
+	public void setTi_tp_id(int ti_tp_id) {
+		this.ti_tp_id = ti_tp_id;
+	}
+	public int getTi_contactno() {
+		return ti_contactno;
+	}
+	public void setTi_contactno(int ti_contactno) {
+		this.ti_contactno = ti_contactno;
 	}
 	public void setStatus(String status) {
 		this.status = status;

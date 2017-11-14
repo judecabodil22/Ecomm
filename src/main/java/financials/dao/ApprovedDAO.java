@@ -32,7 +32,7 @@ public class ApprovedDAO {
 
 		sql = "select bt_id, tp_name, tp_desc, ti_fname+' '+ti_mname+' '+ti_lname as ti_Name,\r\n" + 
 				"ti_email , ti_contactno ,\r\n" + 
-				"bt_StartDate, bt_EndDate, bt_nop, bt_mop , status, tp_price\r\n" + 
+				"bt_StartDate, bt_nop, bt_mop , status, tp_price\r\n" + 
 				"from booktravel as bt\r\n" + 
 				"INNER JOIN travelerinfo as ti\r\n" + 
 				"ON bt.ti_id = ti.ti_id\r\n" + 
@@ -44,9 +44,9 @@ public class ApprovedDAO {
 				ApprovedModel am = new ApprovedModel();
 				am.setBt_nop(rs.getString("bt_nop"));
 				am.setBt_startdate(rs.getString("bt_startdate"));
-				am.setBt_enddate(rs.getString("bt_enddate"));
+				
 				am.setBt_mop(rs.getString("bt_mop"));
-				am.setBt_id(rs.getString("bt_id"));
+				am.setBt_id(rs.getInt("bt_id"));
 				am.setStatus(rs.getString("status"));
 				am.setTp_name(rs.getString("tp_name"));
 				am.setTp_desc(rs.getString("tp_desc"));
@@ -58,7 +58,7 @@ public class ApprovedDAO {
 				
 				
 				am.setTi_email(rs.getString("ti_email"));
-				am.setTi_contactno(rs.getString("ti_contactno"));
+				am.setTi_contactno(rs.getInt("ti_contactno"));
 				
 				return am;
 			}

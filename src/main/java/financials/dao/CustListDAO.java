@@ -32,7 +32,7 @@ public class CustListDAO {
 
 		sql = "select bt_id, tp_name, tp_desc, ti_fname+' '+ti_mname+' '+ti_lname as ti_Name,\r\n" + 
 				"ti_email , ti_contactno ,\r\n" + 
-				"bt_StartDate, bt_EndDate, bt_nop, bt_mop , status, tp_price\r\n" + 
+				"bt_StartDate, bt_nop, bt_mop , status, tp_price\r\n" + 
 				"from booktravel as bt\r\n" + 
 				"INNER JOIN travelerinfo as ti\r\n" + 
 				"ON bt.ti_id = ti.ti_id\r\n" + 
@@ -44,9 +44,9 @@ public class CustListDAO {
 				CustListModel clm = new CustListModel();
 				clm.setBt_nop(rs.getString("bt_nop"));
 				clm.setBt_startdate(rs.getString("bt_startdate"));
-				clm.setBt_enddate(rs.getString("bt_enddate"));
+				
 				clm.setBt_mop(rs.getString("bt_mop"));
-				clm.setBt_id(rs.getString("bt_id"));
+				clm.setBt_id(rs.getInt("bt_id"));
 				clm.setStatus(rs.getString("status"));
 				clm.setTp_name(rs.getString("tp_name"));
 				clm.setTp_desc(rs.getString("tp_desc"));
@@ -58,7 +58,7 @@ public class CustListDAO {
 				
 				
 				clm.setTi_email(rs.getString("ti_email"));
-				clm.setTi_contactno(rs.getString("ti_contactno"));
+				clm.setTi_contactno(rs.getInt("ti_contactno"));
 				
 				return clm;
 			}

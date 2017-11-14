@@ -31,6 +31,7 @@ public class ApprovedListCont {
 	
 	@RequestMapping("cancelled")
 	public ModelAndView mav(@ModelAttribute("insert") ApprovedModel am,
+			@ModelAttribute ("bt_id") ApprovedModel am2,
 			@RequestParam(value = "cancel", required = false) String cancel) {
 
 		ModelAndView mav = new ModelAndView();

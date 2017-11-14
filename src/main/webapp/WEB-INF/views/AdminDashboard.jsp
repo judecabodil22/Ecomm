@@ -127,25 +127,20 @@
                             </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="resources/admin_customerlist.html">
+                                    <a href="ecomm_clist">
                                         <i class="livicon" data-name="user" data-size="18" data-c="#ffffff" data-hc="#42aaca" data-loop="true"></i>
-                                        Customer List
+                                        Pending Tours
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="resources/admin_recentcustomer.html">
+                                    <a href="ecomm_approved">
                                         <i class="livicon" data-name="user-flag" data-size="18" data-c="#ffffff" data-hc="#42aaca" data-loop="true"></i>
-                                        Recent Customer
+                                        Approved Tours
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="resources/admin_manageuser.html">
-                                <i class="livicon" data-name="myspace" data-size="18" data-c="#ffffff" data-hc="#42aaca" data-loop="true"></i>
-                                <span class="title">Manage Users</span>
-                            </a>
-                        </li>
+                        
                     </ul>
                     <!-- END SIDEBAR MENU -->
                 </div>
